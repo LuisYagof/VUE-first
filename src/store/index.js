@@ -12,9 +12,11 @@ export default new Vuex.Store({
   mutations: {
     acumular(state, payload) {
       state.number = this.state.number + payload
+      // payload es una convención: se le suele llamar así a el parámetro que recibe la mutation
     }
   },
   actions: {
+    // ---> así se hace sin destructuring:
     // acumular(context) {
     //   context.commit("acumular")
     // },
